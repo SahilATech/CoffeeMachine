@@ -1,4 +1,6 @@
 # Write your code here
+
+#After a Cup of Coffie Reduce the milk water beans in machine
 def reduce_resources(water, milk, beans,money):
     global water_in
     global beans_in
@@ -147,7 +149,8 @@ def fill():
             return True 
     else:
         return True 
-        
+  
+
 def take():
     global money_in
     global choice
@@ -199,6 +202,7 @@ def remaining():
     else:
         return True
 
+#print the avaliable list of milk water beans 
 def machine_in():
     print(f"""\nThe coffee machine has:
 {water_in} of water
@@ -207,8 +211,7 @@ def machine_in():
 {disposable_cups_in} of disposable cups
 ${money_in} of money""")
 
-
-
+#Main Function
 water_in = int(400)    
 milk_in = int(540)
 beans_in = int(120)  
